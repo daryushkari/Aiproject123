@@ -4,6 +4,7 @@ import math
 from AI import game
 import copy
 from AI import ai_player
+import time
 
 x = 0
 y = 0
@@ -160,10 +161,12 @@ while True:
 
     if game.winner(copy.deepcopy(main_x), 1):
         print("AI wins")
+        time.sleep(3)
         break
 
     if game.winner(copy.deepcopy(main_x), 2):
         print("human wins")
+        time.sleep(3)
         break
 
     if counter == 2:
